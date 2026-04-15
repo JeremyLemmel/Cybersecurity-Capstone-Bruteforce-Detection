@@ -19,35 +19,35 @@
 
 Run these commands as user `kaliuser`:
 
-bash
-# Update package list
-sudo apt update
+Update package list with sudo apt update
 
-# 1. Download Splunk
+1. Download Splunk
 wget -O splunk.tgz https://download.splunk.com/products/splunk/releases/9.4.3/linux/splunk-9.4.3-237ebbd22314-linux-amd64.tgz
 
-# 2. Extract
+2. Extract
 sudo tar -xvzf splunk.tgz -C /opt
 
-# 3. Set ownership
+3. Set ownership
 sudo chown -R kaliuser:kaliuser /opt/splunk
 
-# 4. Start Splunk (first time)
+4. Start Splunk (first time)
 cd /opt/splunk/bin
 sudo ./splunk start --accept-license
 
-# 5. Set credentials when prompted:
-#    Username: kaliuser
-#    Password: Password.3!!
+5. Set credentials when prompted:
+    Username: kaliuser
+    Password: Password.3!!
 
-# 6. Enable boot-start and receiving port
+ 6. Enable boot-start and receiving port
 sudo ./splunk enable boot-start
 sudo ./splunk enable listen 9997 -auth kaliuser:Password.3!!
 
-# 7. Restart Splunk
+ 7. Restart Splunk
 sudo ./splunk restart
 
-Verify port 9997 is listening:bash
+Verify port 9997 is listening:
+
+bash
 
 sudo ss -tuln | grep 9997
 
@@ -62,7 +62,7 @@ bash
 
 nano ~/passwords.txt
 
-Paste the following list into nano (Password.1!! is second-to-last):
+Paste the following list into nano:
 
 password
 admin
@@ -205,11 +205,13 @@ Enable RDP
   Advanced settings → Uncheck “Require devices to use Network Level Authentication”
 
 Enable Nmap Scan LoggingRun in PowerShell as Administrator:
+
 powershell
 
 auditpol /set /subcategory:"Filtering Platform Connection" /success:enable /failure:enable
 
 Verify:
+
 powershell
 
 auditpol /get /subcategory:"Filtering Platform Connection"
