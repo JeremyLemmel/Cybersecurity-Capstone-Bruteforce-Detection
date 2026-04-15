@@ -53,11 +53,25 @@ Built using Kali Linux, Windows Server 2022, Splunk Enterprise, and standard att
 - **Incident-Response-Report.md** – Sample Tier 1 analyst report
 - **Evidence/** – Screenshots of attacks and Splunk dashboard
 
+## Key Learnings
+
+- Built a full SIEM environment from scratch including log forwarding pipeline
+- Simulated real-world attack techniques across the full kill chain
+- Created real-time Splunk dashboards and automated threshold alerts
+- Practiced both Red Team offensive techniques and Blue Team detection/response
+- Developed hands-on experience with EventID correlation (4625 → 4624 pattern)
+
+
 ## Quick Start
 See `Lab-Rebuild-Guide.md` for complete setup instructions.
 
 **Demo Video:** [Link will go here]
 
----
 
 **Project completed April 2026**  
+
+---
+
+## ⚠️ Disclaimer
+
+> All attacks were performed in an **isolated virtual machine environment** for **educational purposes only**. No real systems were targeted. This project is intended to demonstrate SOC analyst skills in a controlled lab setting.
