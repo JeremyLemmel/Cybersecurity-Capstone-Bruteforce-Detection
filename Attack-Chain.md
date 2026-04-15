@@ -15,7 +15,7 @@ This project demonstrates a complete, realistic cyber attack following the **Cyb
 
 ---
 
-## Detailed Commands (Copy-Paste Ready)
+## Detailed Commands 
 
 **Reconnaissance**
 bash
