@@ -12,7 +12,7 @@ Built using Kali Linux, Windows Server 2022, Splunk Enterprise, and standard att
 
 ## Lab Architecture
 
-
+```ascii
 ┌─────────────────────────────────────────────────────────────┐
 │                     Lab Environment                         │
 │                                                             │
