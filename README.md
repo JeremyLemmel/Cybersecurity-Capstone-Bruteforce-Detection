@@ -18,32 +18,8 @@ Built using Kali Linux, Windows Server 2022, Splunk Enterprise, and standard att
 
 ## Lab Architecture
 
-```ascii
-┌─────────────────────────────────────────────────────────────┐
-│                     Lab Environment                         │
-│                                                             │
-│   ┌──────────────────┐          ┌──────────────────────────┐  │
-│   │   Kali Linux     │◄─────────│ Windows Server 2022      │  │
-│   │ (Attacker + SIEM)│   Logs   │       (Victim)           │  │
-│   │                  │          │                          │  │
-│   │ • Splunk 9.4.3   │          │ • RDP (3389)             │  │
-│   │ • Netdiscover    │          │ • SMB (445)              │  │
-│   │ • Nmap           │          │ • Universal Forwarder    │  │
-│   │ • Hydra          │          │   (port 9997)            │  │
-│   │ • xfreerdp       │          └────────────┬─────────────┘  │
-│   └──────────────────┘                       │                │
-│                                              │                │
-│                                   Security Logs                │
-│                                              │                │
-│                                              ▼                │
-│                               ┌──────────────────────────┐  │
-│                               │      Splunk Enterprise    │  │
-│                               │       (on Kali)           │  │
-│                               │   • index=main            │  │
-│                               │   • Real-time Dashboard   │  │
-│                               └──────────────────────────┘  │
-└─────────────────────────────────────────────────────────────┘
-````
+<img width="1536" height="1024" alt="lab enviro pic" src="https://github.com/user-attachments/assets/f0cfcc76-c148-4965-a46b-39f733fbba08" />
+
 ## Attack Chain Summary
 1. Reconnaissance → netdiscover  
 2. Scanning → nmap  
