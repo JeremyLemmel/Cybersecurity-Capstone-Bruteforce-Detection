@@ -4,6 +4,12 @@
 Complete end-to-end cybersecurity capstone demonstrating a realistic attack chain from reconnaissance to detection and response.   
 Built using Kali Linux, Windows Server 2022, Splunk Enterprise, and standard attack tools.
 
+## Project Presentation
+
+[View Slideshow](https://docs.google.com/presentation/d/1LjdieB9Yyt7OIYYlxTGCALNGnXVWld1dYYuKjPCw0Sw/edit?usp=sharing)
+
+*(Google Slides - April 2026)*
+
 ## Technologies Used
 - Kali Linux (Attacker + Splunk Server)
 - Windows Server 2022 (Victim with Universal Forwarder)
