@@ -1,7 +1,7 @@
 # Cybersecurity Capstone – Brute Force Attack & Detection Lab
 
 **Project Overview**  
-Complete end-to-end cybersecurity capstone demonstrating a realistic attack chain from reconnaissance to detection and response.  
+Complete end-to-end cybersecurity capstone demonstrating a realistic attack chain from reconnaissance to detection and response.   
 Built using Kali Linux, Windows Server 2022, Splunk Enterprise, and standard attack tools.
 
 ## Technologies Used
