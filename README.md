@@ -47,11 +47,22 @@ Built using Kali Linux, Windows Server 2022, Splunk Enterprise, and standard att
 6. Response → Block attacker IP in Windows Firewall
 
 ## Repository Contents
-- **Lab-Rebuild-Guide.md** – Full daily rebuild instructions
-- **Attack-Chain.md** – Detailed attack walkthrough
-- **Splunk-Dashboard.md** – All searches and dashboard panels
-- **Incident-Response-Report.md** – Sample Tier 1 analyst report
-- **Evidence/** – Screenshots of attacks and Splunk dashboard
+
+| Folder / File                              | Description |
+|--------------------------------------------|-----------|
+| `Lab-Rebuild-Guide/Lab-Rebuild-Guide.md`   | Step-by-step instructions to rebuild the entire lab environment after VM resets |
+| `Recon/Netdiscover_nmap.md`                | Reconnaissance phase using netdiscover and nmap |
+| `Attack-Chain/Attack-Chain.md`             | Overview of the full attack chain |
+| `Attack-Chain/Hydra_commands.md`           | Detailed Hydra brute-force commands |
+| `Attack-Chain/Xfreerdp_commands.md`        | Commands and usage for xfreerdp successful login |
+| `Detection/Splunk-Dashboard.md`            | Real-time Splunk dashboard panels and visualizations |
+| `Detection/Splunk_queries.md`              | All Splunk SPL searches used in the project |
+| `Defense/Firewall_rules.md`                | Windows Defender Firewall rules and blocking procedures |
+| `Reporting/Incident-Response-Report.md`    | Sample Tier 1 SIEM analyst incident report |
+| `Evidence/`                                | Screenshots and visual evidence of the full attack chain |
+| `Evidence/README.md`                       | Description of screenshots in the Evidence folder |
+
+
 
 ## Key Learnings
 
