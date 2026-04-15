@@ -37,7 +37,7 @@ Built using Kali Linux, Windows Server 2022, Splunk Enterprise, and standard att
 │                               │   • Real-time Dashboard   │  │
 │                               └──────────────────────────┘  │
 └─────────────────────────────────────────────────────────────┘
-''''
+````
 ## Attack Chain Summary
 1. Reconnaissance → netdiscover  
 2. Scanning → nmap  
