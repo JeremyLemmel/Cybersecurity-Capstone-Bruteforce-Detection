@@ -98,8 +98,8 @@ index=main sourcetype="WinEventLog:Security" (EventCode=4625 OR EventCode=4624 O
 
 | Phase | Tool | EventCode |
 |-------|------|-----------|
-| Reconnaissance | `netdiscover` | — |
-| Scanning | `nmap -sS -p-` | — |
+| Reconnaissance | `netdiscover` | 5156, 5157, 5158 |
+| Scanning | `nmap -sS -p-` | 5156, 5157, 5158 |
 | Brute Force | `hydra` | 4625 |
 | RDP Access | `xfreerdp` | 4624, 4672 |
 | Detection | Splunk SIEM | all above |
